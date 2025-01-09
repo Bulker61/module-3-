@@ -18,3 +18,10 @@ print("__________________")
 print()
 values_list_2 = [54.32, 'Строка' ]
 print_params(*values_list_2, 42)
+print("__________________")
+print()
+def append_to_list(item, values_list=None):
+    if values_list is None:
+        values_list = []
+        values_list.append(item)
+print_params(*values_list)
